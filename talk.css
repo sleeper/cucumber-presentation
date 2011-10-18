@@ -15,10 +15,10 @@
 	font-weight: bold;
 	text-align: center;
 	font-size: 100%;
-	line-height: .3;
+	line-height: 1;
 	color: rgba(0,0,0,.7);
 	text-shadow: none;
-	background: url(img/rainbow-wood.jpg) bottom;
+	/*background: url(img/rainbow-wood.jpg) bottom; */
 	padding:.6em 0 0;
 	overflow: hidden;
 }
@@ -28,6 +28,32 @@
 	display: block;
 }
 
+MARK {
+   padding:3px 8px;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+}
+MARK {
+   background:#FAFAA2;
+   color:#000;
+   font-style:normal;
+}
+MARK.important {
+    background:#C00;
+    color:#FFF;
+    font-weight:normal;
+}
+
+MARK.right {
+    font-size: 40%;
+}
+
+.big {
+  font-size: 200%;
+  text-align: center;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio:0) {
 /* hack to avoid using the Object element in Safari/WebKit, due to WebKit Bug 27190 */
 	object[type="image/svg+xml"] {
@@ -35,7 +61,10 @@
 	}
 	
 	#intro h1 {
-		background: url(logo.svg) no-repeat center;
-		background-size:100% auto;
+    background: url(svg/sticky_note.svg) no-repeat center;
+    font-size: 500%;
 	}
+#bugs {
+  background: url(svg/ladybug.svg) no-repeat right bottom;
+}
 }

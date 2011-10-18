@@ -26,7 +26,8 @@ section > header.slide > h1 {
 }
 
 html {
-	background: black url(img/rainbow-wood.jpg) bottom center;
+/*	background: black url(img/rainbow-wood.jpg) bottom center;*/
+  background: #C5D88A;
 	background-size: cover;
 }
 
@@ -98,7 +99,7 @@ strong, b {
 
 .slide {
 	padding:0 2.5% 2%;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.1);
 	background-clip: padding-box;
 	-moz-background-clip: padding-box;
 	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
@@ -158,7 +159,7 @@ strong, b {
 			}
 			
 section > header.slide {
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.1);
 }
 
 	section > header.slide > h1 {
