@@ -67,4 +67,8 @@ MARK.right {
 #bugs {
   background: url(svg/ladybug.svg) no-repeat right bottom;
 }
+
+#incomprehension {
+  background: url(svg/comm_issue.svg) no-repeat center;
+}
 }
