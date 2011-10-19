@@ -34,18 +34,20 @@ MARK {
    -moz-border-radius:8px;
    border-radius:8px;
 }
-MARK {
+
+mark {
    background:#FAFAA2;
    color:#000;
    font-style:normal;
 }
-MARK.important {
+
+mark.important {
     background:#C00;
     color:#FFF;
     font-weight:normal;
 }
 
-MARK.right {
+mark.right {
     font-size: 40%;
 }
 
@@ -68,7 +70,11 @@ MARK.right {
   background: url(svg/ladybug.svg) no-repeat right bottom;
 }
 
-#incomprehension {
-  background: url(svg/comm_issue.svg) no-repeat center;
+section img {
+/*  background: url(svg/comm_issue.svg) no-repeat center;*/
+  display:block;
+  width:auto;
+  margin-left:auto;
+  margin-right:auto;
 }
 }

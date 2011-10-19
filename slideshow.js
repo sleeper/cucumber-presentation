@@ -408,8 +408,9 @@ self.prototype = {
 		}
 		
 		// Individual slide
+    var font_resizing_needed = slide.className.indexOf("no-font-resizing") == -1
 
-		if(slide.clientHeight && slide.clientWidth) {
+		if(slide.clientHeight && slide.clientWidth && font_resizing_needed) {
 			// Strange FF bug: scrollHeight doesn't work properly with overflow:hidden
 			var previousStyle = slide.getAttribute('style');
 			slide.style.overflow = 'auto';

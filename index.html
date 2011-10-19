@@ -27,32 +27,72 @@
   <p style="font-size: 1000%; text-align: center;"> 56% </p>
 	</section>
 
-	<section class="slide" id="incomprehension" title="Incomprehension">
-  <div>&nbsp;</div>
+	<section class="slide" id="incomprehension" title="Communication Breakdown">
+  <h3>Communication Breakdown</h3>
+  <img src="img/comm_issue.png"/>
 	</section>
 
-	<section class="slide" title="Introduction">
-		<h2>Cucumber</h2>
+	<section class="slide" title="Solution">
     <p style="font-size: 300%; text-align: center;">Maximize the communication.</p>
 	</section>
 	
-	<section class="slide" title="Comment">
-		<h2>Comment ?</h2>
-    <p style="font-size: 300%; text-align: center;">Description comprehensible par tous.</p>
+	<section class="slide" title="How">
+		<h2>How ?</h2>
+    <p> Software behaviour </p>
+    <p> must be written </p>
+    <p class="emphasis"> in a user readable manner </p>
 	</section>
+</section>
 
-  <section class="slide" title="Given/When/Then">
-  <h2> Les scenarii </h2>
-  <pre>
+<section>
+  <header class="slide">
+    <h1>Cucumber</h1>
+  </header>
+
+  <section class="slide" title="Natural language">
+  <style scoped>
+    h2 { text-align: center; }
+  </style>
+  <h2> Describe feature<br/> in<br/> natural language </h2>
+  </section>
+
+  <section class="slide" title="But ...">
+  <h2> But &hellip; </h2>
+  <ul>
+    <li>Use a <mark>structure</mark></li>
+    <li>Use code as <mark>glue</mark></li>
+  </ul>
+  </section>
+
+  <section class="slide no-font-resizing" title="Mechanism">
+  <img src="img/feature_steps.png"/>
+  </section>
+
+  <section class="slide" title="Features">
+  <h2>Features</h2>
+  <ul>
+    <li class="delayed">Expressed in a file</li>
+    <li class="delayed">Described using free form text</li>
+    <li class="delayed">Defined through scenarii</li>
+  </ul>
+  </section>
+
+  <section class="slide" title="Feature example">
+  <h2>Feature example</h2>
+    <pre>
+<code>Feature</code>: Division
+  In order to avoid silly mistakes
+  Cashiers must be able to calculate a fraction
+
   <code>Scenario</code>: Regular numbers
     <code>Given</code> I have entered 3 into the calculator
     <code>And</code> I have entered 2 into the calculator
     <code>When</code> I press divide
     <code>Then</code> the result should be 1.5 on the screen
   </pre>
-	</section>
+  </section>
 
-	<section class="slide" title="Given/When/Then">
+	<section class="slide" title="Several languages supported">
   <p class="big">Given / When / Then <mark class="right">en</mark></p> 
   <p class="big delayed">Soit / Lorsque / Alors <mark class="right">fr</mark></p>
   <p class="big delayed">Angenommen / Wenn / Dann <mark class="right">de</mark></p>
@@ -60,6 +100,64 @@
   <p class="big delayed"> ... </p> 
   <p class="big delayed">I CAN HAZ / WEN / DEN  <mark class="right">en-lol</mark></p>
 	</section>
+
+  <section class="slide" title="Scenario Outlines">
+  <h2> Scenario outlines</h2>
+  <pre>
+  <code>Scenario</code>: Regular numbers
+    <code>Given</code> I have entered <mark>&lt;a number&gt;</mark> into the calculator
+    <code>And</code> I have entered <mark>&lt;another number&gt;</mark> into the calculator
+    <code>When</code> I press divide
+    <code>Then</code> the result should be <mark>&lt;result&gt;</mark> on the screen
+
+  <code>Examples</code>:
+    | a number | another number | result |
+    |   12     |        5       |   7    |
+    |   20     |        5       |   15   |
+  </pre>
+  </section>
+
+  <section class="slide" title="Background">
+  <h2> Background </h2>
+  <pre>
+  <code>Background</code>:
+    <code>Given</code> a global administrator named "Greg"
+    <code>And</code> a blog named "Greg's anti-tax rants"
+    <code>And</code> a customer named "Dr. Bill"
+    <code>And</code> a blog named "Expensive Therapy" owned by "Dr. Bill"
+
+  <code>Scenario</code>: Dr. Bill posts to his own blog
+    <code>Given</code> I am logged in as Dr. Bill
+    <code>When</code> I try to post to "Expensive Therapy"
+    <code>Then</code> I should see "Your article was published."
+  </pre>
+  </section>
+
+  <section class="slide" title="Steps">
+  <h2>Steps</h2>
+  <ul>
+    <li>Glue scenario to test subject</li>
+    <li>Written in Ruby (but also Python, Java, Groovy, Scala, Clojure, ...)</li>
+  </ul>
+  </section>
+  
+  <section class="slide" title="">
+  <h2> Step definition </h2>
+    <pre>Given I have entered 3 <mark class="right" style="float:right;">feature</mark></pre>
+  <div style="text-align:center; font-size: 200%;">⇩</div>
+    <pre>
+<code>Given</code> /I have entered (\d+)/ <code>do</code> |number|
+    ## Some ruby code 
+<code>end</code> <mark class="right" style="float:right;">step</mark>
+    </pre>
+  </section>
+</section>
+
+<section >
+  <header class="slide">
+    Use Cases
+  </header>
+</section>
 
 	<section class="slide">
 		<h2>History</h2>
