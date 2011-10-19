@@ -10,7 +10,7 @@
  */
 .slide h2,
 section > header.slide > h1 {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-weight: 100;
 }
  
@@ -114,7 +114,7 @@ strong, b {
 }
 
 	.slide h2 {
-		font-family: 'Helvetica Neue', Helvetica, sans-serif;
+		font-family: Helvetica, sans-serif;
 		font-weight: 100;
 		font-size: 1.2in;
 	}
