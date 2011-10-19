@@ -138,6 +138,7 @@
   <ul>
     <li>Glue scenario to test subject</li>
     <li>Written in Ruby (but also Python, Java, Groovy, Scala, Clojure, ...)</li>
+    <li>Allow to interface to any system</li>
   </ul>
   </section>
   
@@ -151,12 +152,82 @@
 <code>end</code> <mark class="right" style="float:right;">step</mark>
     </pre>
   </section>
+ 
+  <section class="slide" title="">
+  <h2> Cucumber will spot:</h2>
+  <ul>
+    <li class="delayed">Undefined steps</li>
+    <li class="delayed">Ambiguous steps</li>
+    <li class="delayed">Redundant steps</li>
+  </ul>
+  </section>
+  
+  <section class="slide" title="Screen output">
+    <h2> Screen output </h2>
+     <img src="img/screen.jpg"/>
+     But other formats exist ...
+  </section>
+
+  
 </section>
+
 
 <section >
   <header class="slide">
-    Use Cases
+  <h1>Use Cases</h1>
   </header>
+
+  <section class="slide" title="Outside/In development">
+    <h2>Outside/In Dev</h2>
+    <ul>
+    <li>Write a feature / make it pass / refactor</li>
+    <li>The feature (i.e requirement) becomes the test</li>
+    <li>Behavior Driven Development</li>
+    </ul>
+  </section>
+
+  <section class="slide" title="UAT">
+  <h2>UAT</h2>
+  <ul>
+    <li class="delayed">Validates the user receives the application he was expecting</li>
+    <li class="delayed">User's expectations are captured in features</li>
+    <li class="delayed">We have our UAT base !</li>
+  </ul>
+  </section>
+
+  <section class="slide" title="Monitoring">
+  <h2>Production Monitoring</h2>
+  <ul>
+    <li class="delayed">Write feature describing the behavior of your application</li>
+    <li class="delayed">Run it on your production</li>
+    <li class="delayed">Output the results in a Nagios instance</li>
+  </ul>
+  </section>
+
+  <section class="slide" title="User documentation">
+  <style scoped>
+    h3 { text-align: center; }
+  </style>
+  <br/>
+  <h3 class="delayed">Features</h3>
+  <h3 class="delayed">+</h3>
+  <h3 class="delayed">Screenshots</h3>
+  <h3 class="delayed">+</h3>
+  <h3 class="delayed">Custom formatter</h3>
+  <h3 class="delayed">=</h3>
+  <h3 class="delayed">User documentation !</h3>
+  </section>
+
+  <section class="slide" title="Life cycle">
+  <h2>Life Cycle</h2>
+  <p>Features navigates through the application life-cycle:</p>
+  <ul>
+    <li class="delayed">Requirements</li>
+    <li class="delayed">Development</li>
+    <li class="delayed">Regression testing</li>
+    <li class="delayed">Production</li>
+  </ul>
+  </section>
 </section>
 
 	<section class="slide">
