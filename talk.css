@@ -61,8 +61,9 @@ mark.right {
 	object[type="image/svg+xml"] {
 		display: none;
 	}
+}
 	
-	#intro h1 {
+#intro h1 {
     background: url(svg/sticky_note.svg) no-repeat center;
     font-size: 500%;
 	}
@@ -77,4 +78,7 @@ section img {
   margin-left:auto;
   margin-right:auto;
 }
+
+li {
+  font-size: 200%;
 }

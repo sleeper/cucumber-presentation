@@ -25,10 +25,15 @@
   <section class="slide" title="Who">
   <h2>Frédérick Ros</h2>
   <ul>
-    <li>Senior Manager, aMaDEUS</li>
-    <li>Dev addict</li>
-    <li> @sl33p3r</li>
-    <li> +Frederick Ros</li>
+    <style scoped>
+      img {
+        display: inline;
+      }
+    </style>
+    <p>Senior Manager, aMaDEUS</p>
+    <p>Dev addict</p>
+    <p><img src="img/twitter.png"/>&nbsp;<a href="http://twitter.com/#!/sl33p3r">@sl33p3r</a></p>
+    <p><img src="img/gplus.png"/>&nbsp;<a href="https://plus.google.com/112360515366365281857">+Frederick Ros</a></p>
   </ul>
   </section>
 
@@ -89,7 +94,8 @@
   </section>
 
   <section class="slide no-font-resizing" title="Mechanism">
-  <img src="img/feature_steps.png"/>
+    <br/>
+    <img src="img/feature_steps.png"/>
   </section>
 
   <section class="slide" title="Features">
@@ -160,9 +166,9 @@
   <section class="slide" title="Steps">
   <h2>Steps</h2>
   <ul>
-    <li>Glue scenario to test subject</li>
-    <li>Written in Ruby (but also Python, Java, Groovy, Scala, Clojure, ...)</li>
-    <li>Allow to interface to any system</li>
+    <li class="delayed">Glue scenario to test subject</li>
+    <li class="delayed">Written in Ruby (but also Python, Java, Groovy, Scala, Clojure, ...)</li>
+    <li class="delayed">Allow to interface to any system</li>
   </ul>
   </section>
   
@@ -204,17 +210,17 @@
   <section class="slide" title="Outside/In development">
     <h2>Outside/In Dev</h2>
     <ul>
-    <li>Write a feature / make it pass / refactor</li>
-    <li>The feature (i.e requirement) becomes the test</li>
-    <li>Behavior Driven Development</li>
+    <li class="delayed">Write a feature / make it pass / refactor</li>
+    <li class="delayed">The feature becomes the test</li>
+    <li class="delayed">Behavior Driven Development</li>
     </ul>
   </section>
 
   <section class="slide" title="UAT">
   <h2>UAT</h2>
   <ul>
-    <li class="delayed">Validates the user receives the application he was expecting</li>
-    <li class="delayed">User's expectations are captured in features</li>
+    <li class="delayed">Validates the user expectations</li>
+    <li class="delayed">Expectations are captured in features</li>
     <li class="delayed">We have our UAT base !</li>
   </ul>
   </section>
@@ -230,9 +236,11 @@
 
   <section class="slide" title="User documentation">
   <style scoped>
-    h3 { text-align: center; }
+    h3 { 
+      text-align: center;
+      font-size: 150%;
+    }
   </style>
-  <br/>
   <h3 class="delayed">Features</h3>
   <h3 class="delayed">+</h3>
   <h3 class="delayed">Screenshots</h3>
@@ -243,8 +251,7 @@
   </section>
 
   <section class="slide" title="Life cycle">
-  <h2>Life Cycle</h2>
-  <p>Features navigates through the application life-cycle:</p>
+  <h2>Feature Life Cycle</h2>
   <ul>
     <li class="delayed">Requirements</li>
     <li class="delayed">Development</li>
@@ -255,7 +262,7 @@
 </section>
 <section>
   <header class="slide">
-  Take Home Message
+  <h1>Conclusion</h1>
   </header>
   <section class="slide">
     <h2>Cucumber</h2>
@@ -268,11 +275,15 @@
   </section>
 </section>
 <footer class="slide" title="The End">
+  <style scoped>
+    h2 {
+      text-align: center;
+      font-size: 600%;
+    }
+  </style>
 	<h2>Thank you!</h2>
-	<p>Credits:</p>
-	<ul>
-		<li>Slide's templates based on <a href="http://github.com/LeaVerou/CSSS">Lea Verou's CSSS</a></li>
-	</ul>
+  <br/>
+		<p>Slide's templates based on <a href="http://github.com/LeaVerou/CSSS">Lea Verou's CSSS</a></p>
 </footer>
 
 <script src="slideshow.js"></script>
